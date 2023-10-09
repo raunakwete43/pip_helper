@@ -1,5 +1,3 @@
-Certainly! Here's a detailed README.md guide for your Python program:
-
 # Python Pip Helper CLI Tool
 
 ## Overview
