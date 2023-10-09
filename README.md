@@ -43,7 +43,7 @@ python3 main.py
 To search for packages, use the following command:
 
 ```bash
-python3 pypilot.py <package-name> --pages <number-of-pages>
+python3 pypilot.py <package-name> --pages=<number-of-pages>
 ```
 
 - `<package-name>`: The name of the package you want to search for.
@@ -68,7 +68,7 @@ To install packages, follow these steps:
 Here's an example of how to use the tool:
 
 ```bash
-python3 pypilot.py numpy --pages 2
+python3 pypilot.py numpy --page=2
 ```
 
 This command searches for the "numpy" package across 2 pages of results, displays package details, and allows you to select and install packages.
