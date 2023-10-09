@@ -10,6 +10,9 @@ This Python Pip Helper CLI Tool is designed to simplify the process of searching
 - View package details including name, version, and description.
 - Install selected packages to your Python environment.
 
+## ScreenShot
+![ArcoLinux-2023-10-09-1696872740_screenshot_1920x1080](https://github.com/raunakwete43/pypilot/assets/104648854/a43012b1-3d33-4889-9cbc-9bbd06d9a248)
+
 ## Prerequisites
 
 Before using the tool, ensure that you have the following prerequisites installed:
@@ -88,6 +91,7 @@ The tool provides error handling for various scenarios, such as invalid package 
 - The default number of pages to search is set to 1. If you specify a higher number of pages, the tool will limit the search to the available pages.
 
 - Inconsistent data on a page may occur if the web page structure changes. The tool provides a warning in such cases.
+
 
 ## License
 
