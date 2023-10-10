@@ -36,7 +36,7 @@ pip install requests click beautifulsoup4
 3. Run the script using Python:
 
 ```bash
-python3 pypilot.py
+python3 pypilot.py <package-name>
 ```
 
 ## Usage
