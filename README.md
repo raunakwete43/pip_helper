@@ -106,5 +106,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [click](https://click.palletsprojects.com/en/7.x/) - A Python package for creating command-line interfaces.
 - [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) - A library for web scraping and parsing HTML and XML.
 - [PyPI](https://pypi.org/) - The Python Package Index.
-
-Feel free to customize this README with your name, additional acknowledgments, and any other information you find relevant.
