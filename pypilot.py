@@ -29,7 +29,7 @@ def install_package(package_name):
 
 @click.command()
 @click.argument('name')
-@click.option('--pages',default=1, help='Number of pages to search (default: 1)')
+@click.option('--pages', default=1, help='Number of pages to search (default: 1)')
 def search_packages(name, pages):
     name = name.replace(" ", "")
     URL = f"https://pypi.org/search/?q={name}&o="
@@ -60,7 +60,7 @@ def search_packages(name, pages):
         URL = f"https://pypi.org/search/?o=&q={name}&page={page}"
         new_request = requests.get(url=URL)
         new_soup = BeautifulSoup(new_request.content, "html.parser")
-        
+
         # Parse data from the current page
         names = new_soup.find_all("span", attrs={"class": "package-snippet__name"})
         vers = new_soup.find_all("span", attrs={"class": "package-snippet__version"})
