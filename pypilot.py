@@ -1,8 +1,16 @@
 import requests
 import click
 from bs4 import BeautifulSoup
-import pkg_resources
+import importlib.metadata as metadata
 import subprocess
+import sys
+
+def show_python_environment():
+    python_version = sys.version
+    python_path = sys.executable
+    click.echo(click.style("Python Version: ", fg='blue', bold=True) + click.style(python_version, fg='green'))
+    click.echo(click.style("Python Path: ", fg='blue', bold=True) + click.style(python_path, fg='red'))
+    print("\n")
 
 
 def install_package(package_name):
@@ -67,7 +75,7 @@ def search_packages(name, pages):
             print(f"Warning: Inconsistent data on page {page}")
 
 
-    installed_packages = [pkg.key for pkg in pkg_resources.working_set]
+    installed_packages = [pkg for pkg in metadata.packages_distributions()]
 
     for index, (pkg_title, pkg_version, pkg_description) in reversed(list(enumerate(zip(title, version, description), start=1))):
         if(pkg_title.lower() in installed_packages):
@@ -77,6 +85,9 @@ def search_packages(name, pages):
             click.echo(f"{click.style(str(index), fg='blue', bold=True)}. Name: {click.style(pkg_title, fg='green', bold=True)}")
         click.echo(f"   Version: {pkg_version}")
         click.echo(f"   Description: {click.style(pkg_description, italic=True)}\n")
+
+
+    show_python_environment()
 
     prompt = click.style("==> ", fg='green', bold=True) + "Select the package to install (eg: 1 2 3)"
     click.echo(prompt)
