@@ -10,6 +10,9 @@ This Python Pip Helper CLI Tool is designed to simplify the process of searching
 - View package details including name, version, and description.
 - Install selected packages to your Python environment.
 
+## ScreenShot
+![ArcoLinux-2023-10-09-1696872740_screenshot_1920x1080](https://github.com/raunakwete43/pypilot/assets/104648854/a43012b1-3d33-4889-9cbc-9bbd06d9a248)
+
 ## Prerequisites
 
 Before using the tool, ensure that you have the following prerequisites installed:
@@ -33,7 +36,7 @@ pip install requests click beautifulsoup4
 3. Run the script using Python:
 
 ```bash
-python3 main.py
+python3 pypilot.py <package-name>
 ```
 
 ## Usage
@@ -89,6 +92,7 @@ The tool provides error handling for various scenarios, such as invalid package 
 
 - Inconsistent data on a page may occur if the web page structure changes. The tool provides a warning in such cases.
 
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -102,5 +106,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [click](https://click.palletsprojects.com/en/7.x/) - A Python package for creating command-line interfaces.
 - [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) - A library for web scraping and parsing HTML and XML.
 - [PyPI](https://pypi.org/) - The Python Package Index.
-
-Feel free to customize this README with your name, additional acknowledgments, and any other information you find relevant.
